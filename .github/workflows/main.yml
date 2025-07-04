@@ -10,8 +10,8 @@ jobs:
         run: |
           sudo apt update
           sudo apt install xfce4 xfce4-goodies tightvncserver git -y
-        mkdir -p ~/.vnc
-        echo -e "123456\n123456\nn" | vncpasswd
+          mkdir -p ~/.vnc
+          echo -e "123456\n123456\nn" | vncpasswd
           vncserver :1
           vncserver -kill :1
           mkdir -p ~/.vnc
